@@ -116,6 +116,11 @@ if (require.main === module) {
   
   if (mode === 'test') {
     runTests().catch(console.error);
+  } else if (mode === 'character') {
+    // Import and run character demo
+    import('./demo/character-demo').then(({ runCharacterDemo }) => {
+      runCharacterDemo().catch(console.error);
+    });
   } else {
     runDemo().catch(console.error);
   }

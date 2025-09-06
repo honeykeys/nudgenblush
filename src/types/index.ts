@@ -100,3 +100,6 @@ export interface SafetyResult {
   isSafe: boolean;
   reason?: string;
 }
+
+// Re-export character types
+export * from './character';
