@@ -121,6 +121,11 @@ if (require.main === module) {
     import('./demo/character-demo').then(({ runCharacterDemo }) => {
       runCharacterDemo().catch(console.error);
     });
+  } else if (mode === 'narrative') {
+    // Import and run narrative demo
+    import('./demo/narrative-demo').then(({ runNarrativeDemo }) => {
+      runNarrativeDemo().catch(console.error);
+    });
   } else {
     runDemo().catch(console.error);
   }

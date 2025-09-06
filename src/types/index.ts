@@ -103,3 +103,6 @@ export interface SafetyResult {
 
 // Re-export character types
 export * from './character';
+
+// Re-export narrative types  
+export * from './narrative';

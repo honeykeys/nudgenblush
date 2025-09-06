@@ -7,6 +7,7 @@
     "build": "tsc",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "dev:character": "ts-node-dev --respawn --transpile-only src/index.ts character",
+    "dev:narrative": "ts-node-dev --respawn --transpile-only src/index.ts narrative",
     "start": "node dist/index.js",
     "test": "jest",
     "lint": "eslint src/**/*.ts",
